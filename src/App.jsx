@@ -24,10 +24,11 @@ import {
 
 import "./App.css";
 
-function App() {
-  useEffect(() => {}, []);
+import { useStateContext } from "./contexts/ContextProvider";
 
-  const activeMenu = false;
+function App() {
+  const { activeMenu } = useStateContext();
+
   return (
     <BrowserRouter>
       <div className="flex relative dark:bg-main-dark-bg">
