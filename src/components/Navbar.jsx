@@ -29,10 +29,9 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
 );
 
 const Navbar = () => {
-  const { activeMenu, setActiveMenu, isClicked, setIsClicked } =
+  const { activeMenu, setActiveMenu, isClicked, setIsClicked, handleClick } =
     useStateContext();
 
-  const handleClick = () => {};
   return (
     <div className="md:mx-6 flex justify-between p-2 relative">
       <NavButton
