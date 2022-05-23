@@ -1,4 +1,9 @@
 {
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
   "name": "project_syncfusion_dashboard",
   "version": "0.1.0",
   "private": true,
@@ -57,10 +62,5 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "postcss": "^8.4.6",
     "tailwindcss": "^3.0.24"
-  },
-  "browser": {
-    "fs": false,
-    "path": false,
-    "os": false
   }
 }
