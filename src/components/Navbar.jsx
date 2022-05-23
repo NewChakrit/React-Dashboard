@@ -9,6 +9,7 @@ import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import avatar from "../data/avatar.jpg";
 import { Cart, Chat, Notification, UserProfile } from ".";
 import { useStateContext } from "../contexts/ContextProvider.js";
+import { ESLint } from "eslint";
 
 const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
   <TooltipComponent content={title} position="BottomCenter">
@@ -43,6 +44,7 @@ const Navbar = () => {
 
     handleResize();
     return () => window.removeEventListener("resize", handleResize);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -51,8 +53,8 @@ const Navbar = () => {
     } else {
       setActiveMenu(true);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [screenSize]);
-
   return (
     <div className="md:mx-6 flex justify-between p-2 relative">
       <NavButton
